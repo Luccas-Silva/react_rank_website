@@ -7,7 +7,7 @@ function Header() {
         <header>
             <div className='dsrank-logo-containar'>
                 <img src={logo} alt="DSRank" />
-                <h1> ⠀⠀DSRank</h1>
+                <h1> ⠀⠀⠀DSRank</h1>
                 <p>
                     <a href="https://github.com/Luccas-Silva">Desenvolvido por Luccas-Silva</a>
                 </p>

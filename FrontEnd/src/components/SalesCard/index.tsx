@@ -1,4 +1,5 @@
-import '.'
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import NotificationButton from '../NotificationButton'
 
 import './styles.css'
@@ -7,13 +8,23 @@ function SalesCard() {
     return (
         <>
             <div className="dsrank-card">
-                <h2  className="dsrank-sales-title">Vendas</h2>
+                <h2 className="dsrank-sales-title">Vendas</h2>
                 <div>
                     <div className="dsrank-form-control-container">
-                        <input className="dsrank-form-control" type="text"/>
+                        <DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            className="dsrank-form-control"
+                            dateFormat="dd/MM/yyyy"
+                        />
                     </div>
                     <div className="dsrank-form-control-container">
-                        <input className="dsrank-form-control" type="text"/>
+                        <DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            className="dsrank-form-control"
+                            dateFormat="dd/MM/yyyy"
+                        />
                     </div>
                 </div>
 
@@ -41,7 +52,7 @@ function SalesCard() {
                                 <td>
                                     <div className="dsrank-red-btn-container">
                                         <div className="dsrank-red-btn">
-                                        <NotificationButton/>
+                                            <NotificationButton />
                                         </div>
                                     </div>
                                 </td>
@@ -56,7 +67,7 @@ function SalesCard() {
                                 <td>
                                     <div className="dsrank-red-btn-container">
                                         <div className="dsrank-red-btn">
-                                        <NotificationButton/>
+                                            <NotificationButton />
                                         </div>
                                     </div>
                                 </td>
@@ -71,7 +82,7 @@ function SalesCard() {
                                 <td>
                                     <div className="dsrank-red-btn-container">
                                         <div className="dsrank-red-btn">
-                                        <NotificationButton/>
+                                            <NotificationButton />
                                         </div>
                                     </div>
                                 </td>
@@ -86,7 +97,7 @@ function SalesCard() {
                                 <td>
                                     <div className="dsrank-red-btn-container">
                                         <div className="dsrank-red-btn">
-                                        <NotificationButton/>
+                                            <NotificationButton />
                                         </div>
                                     </div>
                                 </td>
@@ -101,7 +112,7 @@ function SalesCard() {
                                 <td>
                                     <div className="dsrank-red-btn-container">
                                         <div className="dsrank-red-btn">
-                                        <NotificationButton/>
+                                            <NotificationButton />
                                         </div>
                                     </div>
                                 </td>
@@ -116,7 +127,7 @@ function SalesCard() {
                                 <td>
                                     <div className="dsrank-red-btn-container">
                                         <div className="dsrank-red-btn">
-                                        <NotificationButton/>
+                                            <NotificationButton />
                                         </div>
                                     </div>
                                 </td>
@@ -131,7 +142,7 @@ function SalesCard() {
                                 <td>
                                     <div className="dsrank-red-btn-container">
                                         <div className="dsrank-red-btn">
-                                            <NotificationButton/>
+                                            <NotificationButton />
                                         </div>
                                     </div>
                                 </td>
