@@ -1,0 +1,15 @@
+.dsrank-red-btn {
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 131, 0, 0.2);;
+    border: 1px solid #F47E02;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .dsrank-red-btn img {
+      width: 25px;
+  }
