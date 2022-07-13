@@ -6,22 +6,22 @@ header {
     justify-content: center;
 }
 
-.dsmeta-logo-container {
+.dsrank-logo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.dsmeta-logo-container img {
+.dsrank-logo-container img {
     width: 235px;
 }
 
-.dsmeta-logo-container h1 {
+.dsrank-logo-container h1 {
     margin-top: 15px;
     font-size: 24px;
 }
 
-.dsmeta-logo-container p {
+.dsrank-logo-container p {
     font-size: 14px;
     font-weight: 300;
 }
