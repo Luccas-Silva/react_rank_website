@@ -2,6 +2,7 @@ import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import NotificationButton from '../NotificationButton';
+import logo from '../../assets/img/logo.svg'
 
 import './styles.css';
 
@@ -16,24 +17,27 @@ function SalesCard() {
     return (
         <>
             <div className="dsrank-card">
-                <h2 className="dsrank-sales-title">Vendas</h2>
-                <div>
-                    <div className="dsrank-form-control-container">
-                        <DatePicker
-                            selected={minDate}
-                            onChange={(date: Date) => setMinDate(date)}
-                            className="dsrank-form-control"
-                            dateFormat="dd/MM/yyyy"
-                        />
-                    </div>
-                    <div className="dsrank-form-control-container">
-                        <DatePicker
-                            selected={maxDate}
-                            onChange={(date: Date) => setMaxDate(date)}
-                            className="dsrank-form-control"
-                            dateFormat="dd/MM/yyyy"
-                        />
-                    </div>
+                <div className="dsrank-title">
+                    <h2 className="dsrank-sales-title">Vendas
+                        <p>⠀⠀</p>
+                        <div className="dsrank-form-control-container">
+                            <DatePicker
+                                selected={minDate}
+                                onChange={(date: Date) => setMinDate(date)}
+                                className="dsrank-form-control"
+                                dateFormat="dd/MM/yyyy"
+                            />
+                        </div>
+                        <div className="dsrank-form-control-container">
+                            <DatePicker
+                                selected={maxDate}
+                                onChange={(date: Date) => setMaxDate(date)}
+                                className="dsrank-form-control"
+                                dateFormat="dd/MM/yyyy"
+                            />
+                        </div>
+                    </h2>
+                    <img src={logo} alt="DSRank" />
                 </div>
 
                 <div>
@@ -159,7 +163,6 @@ function SalesCard() {
 
                     </table>
                 </div>
-
             </div>
         </>
     )
