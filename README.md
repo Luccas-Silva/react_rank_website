@@ -12,7 +12,7 @@
 
 ## Design do Site
 <div className="Design-Site">
-  <img align="center" alt="design" height="1000" width="1000" src="https://user-images.githubusercontent.com/89430801/179338751-361ceffa-a908-432a-b84e-5120d63c5847.svg"/>
+  <img align="center" alt="design" height="1100" width="1000" src="https://user-images.githubusercontent.com/89430801/179338751-361ceffa-a908-432a-b84e-5120d63c5847.svg"/>
 </div>
 
 
