@@ -1,3 +1,5 @@
+import axios from 'axios';
+import { toast } from 'react-toastify';
 import icon from '../../assets/img/notification-icon.svg'
 
 import './styles.css'
@@ -8,7 +10,7 @@ type Props = {
 
 function handleClick(id: number) {
   axios('${BASE_URL}/sales/${id}/notification')
-    .then(() => {
+    .then((response) => {
       toast.info("SMS enviado com sucesso");
     });
 }
@@ -16,7 +18,7 @@ function handleClick(id: number) {
 function NotificationButton({saleId} : Props) {
   return (
     <>
-      <div className="dsrank-red-btn" onClick={() => hendleClick(saleId)}>
+      <div className="dsrank-red-btn" onClick={() => handleClick(saleId)}>
         <img src={icon} alt="Notificar" />
       </div>
     </>
