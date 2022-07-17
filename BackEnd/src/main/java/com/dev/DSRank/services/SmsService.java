@@ -28,12 +28,16 @@ public class SmsService {
 	@Autowired
 	private SaleRepository saleRepository;
 	
+	
+	
 	public void sendSms(Long saleId) {
 		
 		Sale sale = saleRepository.findById(saleId).get();
 		
 		String date = sale.getDate().getMonthValue() +"/"+ sale.getDate().getYear();
 		
+		//Comando para inviar sms:
+		//sales/id/notification//
 		String msg = "O vendedor(a) "+ sale.getSellerName() +" foi destaque em nosso rank "+ date
 				+" com um total de R$"+ String.format("%.2f", sale.getAmount());
 		
