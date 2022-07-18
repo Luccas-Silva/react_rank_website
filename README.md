@@ -10,7 +10,7 @@
 - FrontEnd com React e componentes com HTML e CSS.
 - BackEnd com Java, Spring Boot e Banco de dados.
 
-### *Link do Site:* https://dsrank.netlify.app/
+### *Link do Site:* https://luccas-dsrank.netlify.app/
 
 ## Design do Site
 <div className="Design-Site">
